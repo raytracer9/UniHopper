@@ -57,6 +57,7 @@ public class ReadMeshStream : MonoBehaviour
         Mesh genMesh = new Mesh();
         genMesh.vertices = vertices;
         genMesh.triangles = triangles;
+        genMesh.RecalculateNormals();
         return genMesh;
     }
 
