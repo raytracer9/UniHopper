@@ -1,0 +1,13 @@
+﻿Datastructure Networktransfer
+
+bits	|	datatype	|	description
+
+// meta	
+16		|	char		|	Objecttype 'M' > Mesh
+16*64	|	char[64]	|	GUID
+32		|	int			|	number of verticies
+32		|	int			|	number of triangles
+
+// data
+64*3*	|	double[3]*	|	Verticies > array of Vectors [double x, double y, double z] * number of verticies
+32*3*	|	int[*]*		|	Triangles > array of Indices [index a, index b, index c] * number of triangles
